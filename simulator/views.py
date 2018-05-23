@@ -1,5 +1,5 @@
-from django.http import HttpResponse
-
+from django.http import HttpResponseRedirect
+from django.shortcuts import render
 
 def index(request):
-    return HttpResponse('Django test')
+    return render(request, 'simulator/index.html')
